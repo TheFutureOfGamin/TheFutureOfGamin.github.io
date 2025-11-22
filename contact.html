@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact AssetSpin | ITAD & Recycling</title>
+  <meta name="description" content="Contact AssetSpin to discuss IT asset disposition, recycling, data destruction, and remarketing services.">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">A</span>
+        <span class="logo-text">AssetSpin</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="btn-nav active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s Talk About Your IT Assets</h1>
+        <p class="hero-subtitle">
+          Share a bit about your project, and we’ll follow up to discuss timelines, logistics,
+          and the right ITAD approach for your organization.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-column">
+        <div class="contact-form-wrapper">
+          <h2>Send Us a Message</h2>
+          <form class="contact-form" id="contactForm" method="post" action="#">
+            <div class="form-group">
+              <label for="name">Name<span class="required">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email<span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com" />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company or organization" />
+            </div>
+            <div class="form-group">
+              <label for="services">Interested In</label>
+              <select id="services" name="services">
+                <option value="">Select an option</option>
+                <option value="ITAD">IT Asset Disposition (ITAD)</option>
+                <option value="recycling">IT Recycling & E-waste</option>
+                <option value="data">Secure Data Destruction</option>
+                <option value="remarketing">Remarketing & Value Recovery</option>
+                <option value="other">Multiple / Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details<span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your hardware, locations, timelines, and any specific requirements."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+
+        <div class="contact-details">
+          <h2>Business Details</h2>
+          <p>
+            Use the form or reach out directly. We’ll respond as soon as possible to discuss your needs and next steps.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:info@assetspin.com">info@assetspin.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+1-555-123-4567">+1 (555) 123-4567</a></li>
+            <li><strong>Service Area:</strong> Nationwide (on-site & remote logistics available)</li>
+          </ul>
+          <h3>Typical Projects We Support</h3>
+          <ul class="checklist">
+            <li>Office and campus IT refreshes</li>
+            <li>Data center consolidations & closures</li>
+            <li>Remote workforce asset returns</li>
+            <li>Ongoing ITAD programs for growing organizations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Frequently Asked Questions</h2>
+        </header>
+        <div class="faq">
+          <div class="faq-item">
+            <h3>What types of IT assets do you handle?</h3>
+            <p>
+              We work with most common business IT equipment, including laptops, desktops, servers, networking gear,
+              storage, monitors, and peripherals. If you have specialty equipment, we’re happy to review it with you.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Can you provide certificates of data destruction?</h3>
+            <p>
+              Yes. When we destroy data-bearing assets, we provide certificates of destruction along with relevant asset
+              details and timestamps for your records.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you offer on-site services?</h3>
+            <p>
+              For sensitive environments and larger projects, we can provide on-site data destruction and packing
+              services, followed by secure transport to our processing facilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo footer-logo">
+          <span class="logo-icon">A</span>
+          <span class="logo-text">AssetSpin</span>
+        </div>
+        <p>Have IT hardware to retire? Let’s build a plan that works for you.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li>Email: <a href="mailto:info@assetspin.com">info@assetspin.com</a></li>
+          <li>Phone: <a href="tel:+1-555-123-4567">+1 (555) 123-4567</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> AssetSpin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
