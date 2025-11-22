@@ -822,3 +822,31 @@ textarea {
     padding: 2.25rem 0;
   }
 }
+/* FIX: Lighten text colors on Services page */
+.page-hero,
+.section,
+.service-detail,
+.service-detail p,
+.service-detail h2,
+.checklist li,
+.highlight-card,
+.highlight-card p,
+.highlight-card li {
+  color: #e5e7eb !important; /* Light text for readability */
+}
+
+.service-detail p,
+.checklist li,
+.highlight-card p,
+.highlight-card li {
+  color: #cbd5f5 !important; /* Soft light blue-gray for readability */
+}
+
+.highlight-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(148, 163, 184, 0.4) !important;
+}
+
+.highlight-card h3 {
+  color: #fff !important;
+}
