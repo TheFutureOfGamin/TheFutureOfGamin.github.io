@@ -858,3 +858,21 @@ textarea {
 .section:not(.section-alt) .section-header p {
   color: #cbd5f5;
 }
+/* Make home-page white cards readable */
+.service-card,
+.service-card h3,
+.service-card p,
+.service-card li,
+.process-step,
+.process-step h3,
+.process-step p,
+.process-step li {
+  color: #111827 !important; /* dark slate text */
+}
+
+.service-card p,
+.service-card li,
+.process-step p,
+.process-step li {
+  color: #374151 !important; /* slightly softer body text */
+}
