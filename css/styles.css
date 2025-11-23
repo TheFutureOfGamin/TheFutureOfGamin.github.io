@@ -850,50 +850,11 @@ textarea {
 .highlight-card h3 {
   color: #fff !important;
 }
-/* === Fix dark text on dark sections === */
-.section .section-header h2,
-.section .section-header p,
-.section h2,
-.section p,
-.section li {
-  color: #e7ecf7 !important; /* Light text */
+/* Make section headers readable on dark background without touching cards */
+.section:not(.section-alt) .section-header h2 {
+  color: #e5e7eb;
 }
 
-.section-header p {
-  color: #cbd5f5 !important; /* Softer light blue */
-}
-/* === Fix white card readability === */
-.card,
-.service-card,
-.process-step,
-.highlight-card {
-  color: #1e293b !important; /* Dark readable text */
-}
-
-.card p,
-.service-card p,
-.process-step p,
-.highlight-card p,
-.card li,
-.service-card li,
-.process-step li,
-.highlight-card li {
-  color: #334155 !important; /* Darker body text */
-}
-
-.card h3,
-.service-card h3,
-.process-step h3,
-.highlight-card h3 {
-  color: #0f172a !important; /* Strong, bold headers */
-}
-/* === Make dark highlight sections readable === */
-.section-alt h2,
-.section-alt p,
-.section-alt li {
-  color: #e5e7eb !important;
-}
-
-.section-alt .highlight-card h3 {
-  color: #ffffff !important;
+.section:not(.section-alt) .section-header p {
+  color: #cbd5f5;
 }
