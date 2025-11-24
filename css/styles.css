@@ -877,11 +877,7 @@ textarea {
   color: #374151 !important; /* slightly softer body text */
 }
 .logo-img {
-  height: 32px;
-  width: auto;
-  display: block;
-}
-
-.logo-icon {
-  display: none; /* hide old circle "A" icon if any are left */
+    height: 34px;
+    width: auto;
+    display: block;
 }
