@@ -902,10 +902,11 @@ textarea {
   font-weight: 600;
   color: #fff;
 }
-/* Darker, clearer form labels + section titles */
-.contact-form h2,
+/* Darker, clearer form heading + labels on Contact page */
+.contact-form-wrapper h2,
 .contact-form label {
-    color: #ffffff;      /* pure white */
-    opacity: 1;          /* remove faded look */
-    font-weight: 600;    /* stronger text */
+  color: #0f172a !important;   /* dark slate on white card */
+  opacity: 1;
+  font-weight: 600;
 }
+
