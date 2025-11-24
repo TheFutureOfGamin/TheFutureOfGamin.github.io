@@ -1,40 +1,23 @@
-
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.site-nav');
+  const siteNav = document.querySelector('.site-nav');
+  const navLinks = document.querySelectorAll('.site-nav a');
 
-  if (navToggle && nav) {
-    navToggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-    });
-  }
+  if (!navToggle || !siteNav) return;
 
-  const yearSpan = document.getElementById('year');
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
-  }
+  // Open / close nav when the hamburger is tapped
+  navToggle.addEventListener('click', () => {
+    siteNav.classList.toggle('open');
+    navToggle.classList.toggle('is-open');
+  });
 
-  const contactForm = document.getElementById('contactForm');
-  const formNote = document.getElementById('formNote');
-
-  if (contactForm && formNote) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = contactForm.querySelector('#name').value.trim();
-      const email = contactForm.querySelector('#email').value.trim();
-      const message = contactForm.querySelector('#message').value.trim();
-
-      if (!name || !email || !message) {
-        formNote.textContent = 'Please fill out the required fields.';
-        formNote.classList.remove('success');
-        formNote.classList.add('error');
-        return;
+  // Close nav after clicking a link (nice on mobile)
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (siteNav.classList.contains('open')) {
+        siteNav.classList.remove('open');
+        navToggle.classList.remove('is-open');
       }
-
-      formNote.textContent = 'Thank you! Your message has been received. We will follow up shortly.';
-      formNote.classList.remove('error');
-      formNote.classList.add('success');
-      contactForm.reset();
     });
-  }
+  });
 });
