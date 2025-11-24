@@ -909,4 +909,15 @@ textarea {
   opacity: 1;
   font-weight: 600;
 }
+.nav-toggle.is-open .nav-toggle-line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle.is-open .nav-toggle-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.is-open .nav-toggle-line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
 
