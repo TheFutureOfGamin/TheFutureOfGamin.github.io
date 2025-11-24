@@ -886,3 +886,19 @@ textarea {
     width: auto;
     display: block;
 }
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo-img {
+  height: 42px; /* match header size */
+  width: auto;
+}
+
+.footer-logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
