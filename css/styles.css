@@ -902,3 +902,10 @@ textarea {
   font-weight: 600;
   color: #fff;
 }
+/* Darker, clearer form labels + section titles */
+.contact-form h2,
+.contact-form label {
+    color: #ffffff;      /* pure white */
+    opacity: 1;          /* remove faded look */
+    font-weight: 600;    /* stronger text */
+}
