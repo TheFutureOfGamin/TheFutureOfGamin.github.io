@@ -95,11 +95,16 @@ body {
 }
 
 .logo {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  text-decoration: none;
-  gap: 0.55rem;
+  gap: 10px; /* space between icon and text */
 }
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
 
 .logo-icon {
   width: 2.1rem;
@@ -877,7 +882,7 @@ textarea {
   color: #374151 !important; /* slightly softer body text */
 }
 .logo-img {
-    height: 34px;
+    height: 42px;
     width: auto;
     display: block;
 }
